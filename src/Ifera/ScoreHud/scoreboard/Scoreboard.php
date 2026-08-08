@@ -36,7 +36,7 @@ namespace Ifera\ScoreHud\scoreboard;
 use Ifera\ScoreHud\ScoreHudSettings;
 use Ifera\ScoreHud\session\PlayerSession;
 use Ifera\ScoreHud\utils\HelperUtils;
-use jackmd\scorefactory\ScoreFactory;
+use Ifera\ScoreHud\libs\_61b94440de849077\jackmd\scorefactory\ScoreFactory;
 use function array_count_values;
 use function array_keys;
 use function array_map;

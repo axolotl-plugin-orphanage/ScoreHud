@@ -38,7 +38,7 @@ use Ifera\ScoreHud\scoreboard\ScoreboardHelper;
 use Ifera\ScoreHud\ScoreHud;
 use Ifera\ScoreHud\ScoreHudSettings;
 use Ifera\ScoreHud\utils\HelperUtils;
-use jackmd\scorefactory\ScoreFactory;
+use Ifera\ScoreHud\libs\_61b94440de849077\jackmd\scorefactory\ScoreFactory;
 use pocketmine\player\Player;
 use function is_null;
 
