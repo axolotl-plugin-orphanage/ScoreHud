@@ -43,7 +43,6 @@ use Ifera\ScoreHud\utils\TitleUtils;
 use JackMD\ConfigUpdater\ConfigUpdater;
 use Ifera\ScoreHud\utils\Utils;
 use jackmd\scorefactory\ScoreFactory;
-use JackMD\UpdateNotifier\UpdateNotifier;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
@@ -76,7 +75,6 @@ class ScoreHud extends PluginBase{
 			return;
 		}
 
-		UpdateNotifier::checkUpdate($this->getDescription()->getName(), $this->getDescription()->getVersion());
 		ScoreHudSettings::init($this);
 
 		$this->validateConfigs();

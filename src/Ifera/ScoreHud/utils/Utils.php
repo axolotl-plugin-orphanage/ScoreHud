@@ -37,7 +37,6 @@ use Ifera\ScoreHud\ScoreHud;
 use Ifera\ScoreHud\ScoreHudSettings;
 use JackMD\ConfigUpdater\ConfigUpdater;
 use jackmd\scorefactory\ScoreFactory;
-use JackMD\UpdateNotifier\UpdateNotifier;
 use function preg_match_all;
 use function preg_quote;
 
@@ -77,7 +76,6 @@ class Utils{
 	public static function validateVirions(ScoreHud $plugin): bool{
 		$requiredVirions = [
 			"ScoreFactory"   => ScoreFactory::class,
-			"UpdateNotifier" => UpdateNotifier::class,
 			"ConfigUpdater"  => ConfigUpdater::class
 		];
 
