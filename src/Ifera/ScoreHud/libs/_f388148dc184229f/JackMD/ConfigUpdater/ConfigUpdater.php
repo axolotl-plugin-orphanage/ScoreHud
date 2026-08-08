@@ -30,7 +30,7 @@ declare(strict_types = 1);
  * ------------------------------------------------------------------------
  */
 
-namespace Ifera\ScoreHud\libs\_61b94440de849077\JackMD\ConfigUpdater;
+namespace Ifera\ScoreHud\libs\_f388148dc184229f\JackMD\ConfigUpdater;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
