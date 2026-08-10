@@ -30,8 +30,9 @@ declare(strict_types = 1);
  * ------------------------------------------------------------------------
  */
 
-namespace Ifera\ScoreHud\libs\_f388148dc184229f\JackMD\ConfigUpdater;
+namespace Ifera\ScoreHud\libs\_ecc7694314307e1a\JackMD\ConfigUpdater;
 
+use pocketmine\data\SavedDataLoadingException;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\utils\Config;
@@ -47,8 +48,14 @@ class ConfigUpdater{
 	 * @return bool
 	 */
 	public static function checkUpdate(PluginBase $plugin, Config $config, string $configKey, int $latestVersion, string $updateMessage = ""): bool{
-		if(($config->exists($configKey)) && ((int) $config->get($configKey) === $latestVersion)){
-			return false;
+		$configValue = $config->get($configKey, null);
+		if($configValue !== null){
+			if(!is_numeric($configValue)){
+				throw new SavedDataLoadingException("Invalid config version value on config file");
+			}
+			if((int) $configValue === $latestVersion){
+				return false;
+			}
 		}
 
 		$configData = self::getConfigData($config);
@@ -79,11 +86,22 @@ class ConfigUpdater{
 	 * name of the config and the name of config suffixed with old.
 	 *
 	 * @param Config $config
-	 * @return array
+	 * 
+	 * @return array<string, string>
+	 * @phpstan-return array{
+	 * 	configPath: string,
+	 * 	pluginPath: string,
+	 * 	configName: string,
+	 * 	oldConfigName: string
+	 * }
 	 */
 	private static function getConfigData(Config $config): array{
 		$configPath = $config->getPath();
-		$configData = explode(".", basename($configPath));
+		$configData = explode(".", basename($configPath), limit: 2);
+
+		if(count($configData) !== 2){
+			throw new SavedDataLoadingException("Config path \"$configPath\" does not have a valid name and extension.");
+		}
 
 		$configName = $configData[0];
 		$configExtension = $configData[1];

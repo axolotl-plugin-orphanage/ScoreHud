@@ -35,8 +35,8 @@ namespace Ifera\ScoreHud\utils;
 
 use Ifera\ScoreHud\ScoreHud;
 use Ifera\ScoreHud\ScoreHudSettings;
-use Ifera\ScoreHud\libs\_f388148dc184229f\JackMD\ConfigUpdater\ConfigUpdater;
-use Ifera\ScoreHud\libs\_f388148dc184229f\jackmd\scorefactory\ScoreFactory;
+use Ifera\ScoreHud\libs\_ecc7694314307e1a\JackMD\ConfigUpdater\ConfigUpdater;
+use Ifera\ScoreHud\libs\_ecc7694314307e1a\jackmd\scorefactory\ScoreFactory;
 use function preg_match_all;
 use function preg_quote;
 

@@ -40,9 +40,9 @@ use Ifera\ScoreHud\session\PlayerSessionHandler;
 use Ifera\ScoreHud\task\ScoreUpdateTitleTask;
 use Ifera\ScoreHud\utils\HelperUtils;
 use Ifera\ScoreHud\utils\TitleUtils;
-use Ifera\ScoreHud\libs\_f388148dc184229f\JackMD\ConfigUpdater\ConfigUpdater;
+use Ifera\ScoreHud\libs\_ecc7694314307e1a\JackMD\ConfigUpdater\ConfigUpdater;
 use Ifera\ScoreHud\utils\Utils;
-use Ifera\ScoreHud\libs\_f388148dc184229f\jackmd\scorefactory\ScoreFactory;
+use Ifera\ScoreHud\libs\_ecc7694314307e1a\jackmd\scorefactory\ScoreFactory;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
@@ -96,7 +96,7 @@ class ScoreHud extends PluginBase{
 		}
 
 		$this->getServer()->getPluginManager()->registerEvents(new PlayerSessionHandler(), $this);
-		$this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
+		$this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
 
 		$this->getServer()->getCommandMap()->register("scorehud", new ScoreHudCommand($this));
 
