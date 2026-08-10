@@ -40,20 +40,17 @@ class ScoreHudSettings{
 
 	public const PREFIX = "§8[§l§6S§eH§r§8]§r ";
 
-	private static ?ScoreHud $plugin;
 	private static ?Config $config;
 	private static ?Config $scorehud;
 
 	private function __construct(){}
 
 	public static function init(ScoreHud $plugin): void{
-		self::$plugin = $plugin;
 		self::$config = $plugin->getConfig();
 		self::$scorehud = $plugin->getScoreConfig();
 	}
 
 	public static function destroy(): void{
-		self::$plugin = null;
 		self::$config = null;
 		self::$scorehud = null;
 	}

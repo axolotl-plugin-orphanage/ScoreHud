@@ -1,28 +1,24 @@
 {
-    "name": "ifera/scorehud",
+    "name": "axolotl-plugin-orphanage/scorehud",
     "description": "An event driven, highly customizable plugin to add Scoreboards on your Minecraft Bedrock Server.",
     "type": "project",
     "license": "GPL-3.0-only",
-    "require": {
-        "php": "^8.0",
-        "axolotl-pm/pocketmine-mp": "^5.45.0",
-        "buchwasa/scorefactory": "dev-master",
-        "ifera-mc/config-updater": "dev-master"
-    },
-    "require-dev": {
-        "sof3/pharynx": "^0.3.8"
-    },
-    "repositories": [
+    "authors": [
         {
-            "type": "vcs",
-            "url": "https://github.com/axolotl-plugin-orphanage/ConfigUpdater"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/axolotl-plugin-orphanage/ScoreFactory"
+            "name": "Ifera",
+            "email": "contact@tayyab.dev"
         }
     ],
-    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "axolotl-plugin-orphanage/scorefactory": "^3.3.0",
+        "axolotl-plugin-orphanage/config-updater": "^2.2.0"
+    },
+    "require-dev": {
+        "axolotl-pm/pocketmine-mp": "^5.45.0",
+        "sof3/pharynx": "^0.3.8",
+        "phpstan/phpstan": "^2.2.8"
+    },
     "autoload": {
         "classmap": ["src"]
     }

@@ -1,3 +1,25 @@
+## 🏠 Adopted by axolotl-plugin-orphanage
+
+This plugin has been adopted by [**axolotl-plugin-orphanage**](https://github.com/axolotl-plugin-orphanage) due to prolonged inactivity from its original author. It will continue to be maintained and updated to follow [**axolotl-pm/PocketMine-MP**](https://github.com/axolotl-pm/PocketMine-MP).
+
+> [!NOTE]
+> This plugin is primarily supported on **axolotl-pm**. Compatibility with other PocketMine-MP forks is not guaranteed and no support will be provided for them.
+
+Join the **axolotl-pm** community for support, updates and discussion:
+<div align="center">
+
+[![axolotl-pm Discord](https://img.shields.io/discord/1526008653482692768?label=axolotl-pm+Discord&style=for-the-badge&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/XbUXqtVPqp)
+</div>
+
+### 📥 Download
+<div align="center">
+
+[![Stable Release](https://img.shields.io/github/v/release/axolotl-plugin-orphanage/ScoreHud?label=Stable+Release&style=for-the-badge&logo=github&logoColor=white&color=2292ee)](https://github.com/axolotl-plugin-orphanage/ScoreHud/releases/latest/download/ScoreHud.phar)
+[![Nightly Build](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/axolotl-plugin-orphanage/ScoreHud/master/plugin.yml&query=$.version&label=Nightly+Build&prefix=v&color=blueviolet&style=for-the-badge&logo=github&logoColor=white)](https://github.com/axolotl-plugin-orphanage/ScoreHud/releases/download/nightly/ScoreHud.phar)
+
+*Stable recommended for production · Nightly always up to date from the latest commit*
+</div>
+
 <img align="right" width="auto" height="260" src="https://github.com/JackMD/ScoreHud/blob/master/meta/ScoreHud.PNG" alt="ScoreHud Banner">
 
 # ScoreHud
