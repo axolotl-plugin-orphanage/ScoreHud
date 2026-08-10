@@ -9,9 +9,6 @@ jobs:
     uses: axolotl-pm/pmmp-plugin-actions/.github/workflows/build-phar.yml@main
     with:
       php-version: '8.2'
-      stage-poggit: true
-    permissions:
-      contents: write  # Required because `stage-poggit: true`
 
   publish:
     needs: build
